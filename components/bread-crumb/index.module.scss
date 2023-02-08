@@ -1,0 +1,38 @@
+@import "@/styles/variables.scss";
+.bread-crumb {
+  display: block;
+  @include normalFlex();
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 32px;
+  padding-top: 30px;
+  padding-bottom: 19px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  .crumb-item {
+    @include normalFlex();
+    align-items: center;
+    .arrow {
+      display: inline-block;
+      width: 16px;
+      height: 26px;
+      margin: 0 6px 0 8px;
+      background: url(~assets/images/ar.png) no-repeat left center;
+    }
+    .name {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .sub-name {
+      font-size: 16px;
+      color: #999;
+      font-weight: bold;
+    }
+  }
+}
